@@ -7,11 +7,12 @@ generation of the ElementTree used.
 
 **Warning: This library is intended mostly as an fun experiment, please do not do use this in production.**
 
+
 The behaviour should be the following:
-'//h3/a' -> '<h3[^>]*>(<a[^>]*>[^<]*<\a>)</h3>'
-'//h1[@itemprop="name"]' -> '<h1[^>]*itemprop="name"[^>]*>[^<]*</h1>'
-'//a[contains(@class,'checkBookDownloaded')]/@href' -> '<a[^>]*class="[^"]*checkBookDownloaded[^"]*"[^>]*href="([^"]*)">'
-'//div[contains(@class,'property_year')]/div[contains(@class,'property_value')]' -> '<div[^>]*class="[^"]*property_year[^"]*"[^>]*><div[^>]*class="[^"]*property_year[^"]*"[^>]*><\div>>'
+ - '//h3/a' -> '<h3[^>]*>(<a[^>]*>[^<]*<\a>)</h3>'
+ - '//h1[@itemprop="name"]' -> '<h1[^>]*itemprop="name"[^>]*>[^<]*</h1>'
+ - '//a[contains(@class,'checkBookDownloaded')]/@href' -> '<a[^>]*class="[^"]*checkBookDownloaded[^"]*"[^>]*href="([^"]*)">'
+ - '//div[contains(@class,'property_year')]/div[contains(@class,'property_value')]' -> '<div[^>]*class="[^"]*property_year[^"]*"[^>]*><div[^>]*class="[^"]*property_year[^"]*"[^>]*><\div>>'
 
 Singleton elements may pose an issue:
     <area />
@@ -62,8 +63,8 @@ In order to run tests locally::
 
 Licence
 -------
-
+MIT license
 
 Authors
 -------
-`regexpath` was written by `Jesse Constante <jglconstant@gmail.com>`_.
+`regexpath` was written by `Jesse Constante <jglconstante@gmail.com>`_.
